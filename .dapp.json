@@ -1,0 +1,21 @@
+{
+  "contracts": {
+    "ds-test_0a5da56": {
+      "deps": {},
+      "name": "ds-test",
+      "repo": {
+        "name": "ds-test-0a5da56",
+        "ref": "HEAD",
+        "rev": "0a5da56b0d65960e6a994d2ec8245e6edd38c248",
+        "url": "https://github.com/dapphub/ds-test"
+      }
+    }
+  },
+  "this": {
+    "deps": {
+      "ds-test": "ds-test_0a5da56"
+    },
+    "name": ""
+  },
+  "version": 1
+}
