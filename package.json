@@ -1,0 +1,26 @@
+{
+  "name": "ds-tools",
+  "version": "0.1.0",
+  "description": "solidity test contracts  from waffle, hardhat, dapptools, and foundry",
+  "files": [
+    "/contracts/**/*.sol",
+    "/build/contracts/*.json",
+    "!/contracts/mocks/**/*",
+    "/src/**/*.sol",
+    "/dist/**/*.json"
+  ],
+  "scripts": {
+    "test": "echo \"Warning: no test specified\" && exit 127"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambacha/ds-tools.git"
+  },
+  "keywords": [],
+  "author": "SEE CONTRIBUTORS",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/sambacha/ds-tools/issues"
+  },
+  "homepage": "https://github.com/sambacha/ds-tools#readme"
+}
