@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
+// <https://www.gnu.org/licenses/gpl-3.0-standalone.html>
+
+
+pragma solidity ^0.6.0 || ^0.7.0 || ^0.8.0;
+
+/*{
+<%= Hevm public hevm = Hevm(<% HEVM_ADDRESS %>); %>
+}*/
+
 
 /// @title DSTest
-/**
-* 
-*
-*
-*/
-pragma solidity >=0.4.23;
-
-// Hevm public hevm = Hevm(HEVM_ADDRESS);
-
 contract DSTest {
     event log                    (string);
     event logs                   (bytes);
