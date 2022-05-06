@@ -1,17 +1,20 @@
 /// SPDX-License-Identifier: AGPL-3.0-only
 pragma solidity ^0.8.0;
 
-import "ds-test/test.sol"; // ds-test
+
+import "ds-test/test.sol";
 
 /**
 * @title ds-test/assert-test
 * @notice Extends ds-test with additional generic assertions + revert checks
 * @author Michael Pouy, Vincenzo Palazzo, Daniel Cousens, Gerasimos Maropoulos
+* @version 2022.05
 */
 
-
 contract DSAssert is DSTest {
-    /** function assertErrorWithMessage
+
+    /** 
+    * @custom:function assertErrorWithMessage
     * @notice Calls function and checks for matching revert message
     * @param erroringFunction to call
     * @param message to check against revert error string
@@ -29,7 +32,7 @@ contract DSAssert is DSTest {
     }
 
     /**
-    * @function assertErrorWithMessageParams
+    * @custom:function assertErrorWithMessageParams
     * @notice Calls function and checks for matching revert message
     * @param erroringFunction to call
     * @param param to pass to function
@@ -50,7 +53,7 @@ contract DSAssert is DSTest {
 
 
     /**
-     * @function assertErrorWithMessageMulti
+     * @custom:function assertErrorWithMessageMulti
      * @notice Calls function and checks for matching revert message
      * @param erroringFunction to call
      * @param params to pass to function
@@ -71,7 +74,7 @@ contract DSAssert is DSTest {
 
 
     /**
-    * @function assertErrorWithMessagePayable
+    * @custom:function assertErrorWithMessagePayable
     * @notice Calls function and checks for matching revert message (with value)
     * @param erroringFunction to call
     * @param param to pass to function
@@ -91,11 +94,10 @@ contract DSAssert is DSTest {
             assertEq(error, message);
         }
     }
-}
 
-    // not provided in ds-test
+    // NOTE: not provided in ds-test
     /**
-     * @function assertEqApprox
+     * @custom:function assertEqApprox
      * @param uint256 
      * @param _a 
      * @param uint256 
@@ -118,3 +120,18 @@ contract DSAssert is DSTest {
             fail();
         }
     }
+    
+}
+
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
